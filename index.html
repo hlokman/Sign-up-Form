@@ -35,7 +35,7 @@
             <div id="content">
                 <div class="formContent">
                     <h2>Let's do this!</h2>
-                    <form action="#" method="get" id="form"> <!--Start of the Form-->
+                    <form action="https://httpbin.org/post" method="post" id="form"> <!--Start of the Form-->
                         <div class="leftForm">
                             <ul>
                                 <li>
@@ -48,7 +48,7 @@
                                 </li>
                                 <li>
                                     <label for="password">PASSWORD</label>
-                                    <input type="password" id="password" name="password" class="error" required>
+                                    <input type="password" id="password" name="password" class="error" required onkeyup='check();'>
                                     <span class="mismatch">* Passwords do not match</span>
                                 </li>
                             </ul>
@@ -66,7 +66,7 @@
                                 </li>
                                 <li>
                                     <label for="password_check">CONFIRM PASSWORD</label>
-                                    <input type="password" id="password_check" name="password_check" class="error" required>
+                                    <input type="password" id="password_check" name="password_check" class="error" required onkeyup='check();'>
                                 </li>
                             </ul>
                         </div>
@@ -79,7 +79,7 @@
 
             <div id="footer">
                 <div class="footerContent">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" class="btnSubmit">Create Account</button>
                 </form> <!--End of the Form (to include the button which is within an another container)-->
                     <br>
                     <p>Already have account? <a href="">Log in</a></p>
@@ -87,5 +87,6 @@
             </div>
         </div>
     </div>
+    <script src="form.js"></script>
 </body>
 </html>
