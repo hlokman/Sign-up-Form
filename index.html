@@ -8,6 +8,83 @@
 </head>
 
 <body>
-    
+    <div id="mainContainer">
+        <!--LEFT PART-->
+        <div id="leftPart">
+            <img src="./images/pa.jpeg" alt="background" class="bgImg">
+            <div class="logo">
+                <div class="logoImg">
+                    <img src="./images/odin-lined.png" alt="logo-image" class="logo-image">
+                </div>
+                <div class="logoTxt"><span class="text">Odin</span></div>
+            </div>
+        </div>
+
+
+        <!--RIGHT PART-->
+        <div id="rightPart">
+            <div id="header">
+                <div class="headerTxt">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                        Sign up <em>now</em> to get started</p>
+                    <br>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="formContent">
+                    <h2>Let's do this!</h2>
+                    <form action="#" method="get" id="form">
+                        <div class="leftForm">
+                            <ul>
+                                <li>
+                                    <label for="first_name">FIRST NAME</label>
+                                    <input type="text" id="first_name" name="first_name"> 
+                                </li>
+                                <li>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email">
+                                </li>
+                                <li>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" class="error">
+                                    <span class="mismatch">* Passwords do not match</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rightForm">
+                            <ul>
+                                <li>
+                                    <label for="last_name">LAST NAME</label>
+                                    <input type="text" id="last_name" name="last_name">
+                                </li>
+                                <li>
+                                    <label for="phone_num">PHONE NUMBER</label>
+                                    <input type="tel" id="phone_num" name="phone_num">
+                                </li>
+                                <li>
+                                    <label for="password_check">CONFIRM PASSWORD</label>
+                                    <input type="password" id="password_check" name="password_check" class="error">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div id="footer">
+                <div class="footerContent">
+                    <button type="submit">Create Account</button>
+                    <br>
+                    <p>Already have account? <a href="">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
